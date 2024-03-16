@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btns > :last-child {
+  padding: 10px 16px;
+  background-color: cyan;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+}

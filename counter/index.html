@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,8 +14,155 @@
       <button id="btn2">-</button>
     </div>
     <br />
-    <input type="text" value="1" class="title" />
+    <input type="number" value="1" class="title" />
     <br />
     <button id="reset">Reset</button>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+      header h1 {
+        margin: 0;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      section {
+        margin-bottom: 30px;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      .skills ul {
+        list-style: none;
+        padding: 0;
+      }
+      .skills li {
+        margin-bottom: 10px;
+      }
+      .projects .project {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      .contact form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .contact input[type="text"],
+      .contact input[type="email"],
+      .contact textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      .contact input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .contact input[type="submit"]:hover {
+        background-color: #555;
+      }
+      @media (min-width: 768px) {
+        .container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+        }
+        .container > section {
+          margin-bottom: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+    </header>
+
+    <div class="container">
+      <section class="about">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          condimentum tortor elit, at sollicitudin tortor fermentum nec. Morbi
+          auctor massa eget metus posuere vestibulum.
+        </p>
+      </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>SQL</li>
+        </ul>
+      </section>
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            condimentum tortor elit, at sollicitudin tortor fermentum nec.
+          </p>
+        </div>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            condimentum tortor elit, at sollicitudin tortor fermentum nec.
+          </p>
+        </div>
+      </section>
+      <section class="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <input type="submit" value="Send" />
+        </form>
+      </section>
+    </div>
   </body>
 </html>
